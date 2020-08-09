@@ -3,10 +3,10 @@ import './description.styles.scss'
 
 const Description = () => (
     <div>
-        <img className='arrows' src={require("./arrows.png")} alt="" width="400px;" />
+     <div className='arrows' ></div>
 
         <br />
-        <div className="jumbotron">
+        <div className="jumbotron fatBottom">
             <h4 className="display-4">Hello, visitor!</h4>
 
             <div className='row'>
@@ -22,6 +22,8 @@ const Description = () => (
                     </div>
 
                 </div>
+                
+
                 <div className='col-6' >
                     <div style={{ marginLeft: '15px' }}>I have experience as a data analyst for a consulting company and as a technology analyst for a tech startup. I am passionate about data analytics and application development, and the overlap between the two. 
                     <form method='get' action={require('./resume.pdf')} target='_blank'>

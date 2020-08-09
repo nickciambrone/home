@@ -1,13 +1,18 @@
 .arrows{
-    position: absolute;
-    left:260px;
+    background-image: url('./arrows.png');
+    
+    width: 810px;
+    height:250px;
+    margin-left:50px;
+    position:relative;
+    bottom:7px;
     z-index:1;
 
 }
-.jumbotron{
-    position: absolute;
-
-    z-index:0;
+.fatBottom{
+    position:relative;
+    bottom:235px;
+    z-index:-1;
 
 }
 .resume{

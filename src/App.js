@@ -11,7 +11,7 @@ const App = () => {
   const { language, project } = technologies;
   return (
     <div className="App">
-      <div className='container'>
+      <div className='container' style = {{paddingLeft:'0'}}>
         <div className='row'>
           <div className='col-2'>
             <div className='sidenav'>
@@ -75,7 +75,7 @@ const App = () => {
 
 
             <div className='project-holder'>
-              {language == 'Excel' || language == "Python" ? <SinglePage pdf={project} language={language} /> : <Project language={language} />}
+               <Project language={language} />
             </div>
 
 
