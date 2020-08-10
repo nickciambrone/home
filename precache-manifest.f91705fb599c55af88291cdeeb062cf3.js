@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ca91a97e72567fed680d3fb03ed53f07",
+    "revision": "dbbff0cdbcca157c9d5be74dd1713065",
     "url": "/home/index.html"
   },
   {
-    "revision": "69088a7db0a1e3504d2b",
-    "url": "/home/static/css/main.98d78f9b.chunk.css"
+    "revision": "e060e0f61844349005ed",
+    "url": "/home/static/css/main.a81d52da.chunk.css"
   },
   {
     "revision": "54420f3ac5e0eedbb304",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/home/static/js/2.23c19634.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "69088a7db0a1e3504d2b",
-    "url": "/home/static/js/main.4723b1f2.chunk.js"
+    "revision": "e060e0f61844349005ed",
+    "url": "/home/static/js/main.9f0ab0aa.chunk.js"
   },
   {
     "revision": "ec108cbfd521a232d3c7",
@@ -90,6 +90,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "cf76689e7544dd0d40fc0acc37bade17",
     "url": "/home/static/media/resume.cf76689e.pdf"
+  },
+  {
+    "revision": "f028679986b98a60ed8c08aae6747c0b",
+    "url": "/home/static/media/royalCloth.f0286799.png"
   },
   {
     "revision": "83d50c91024eac0d970e11c60ca3666d",
