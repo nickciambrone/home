@@ -56,7 +56,7 @@ const App = () => {
                 <ProjectButton className='navbar-brand' skill='SQL' handleClick={() => changeLanguage({ language: 'SQL' })} />
                 <ProjectButton className='navbar-brand' skill='Python' handleClick={() => changeLanguage({ language: 'Python', project: loan })} />
                 <ProjectButton className='navbar-brand' skill='Excel' handleClick={() => changeLanguage({ language: 'Excel', project: cp1 })} />
-                <ProjectButton className='navbar-brand' skill='Tableau' handleClick={() => changeLanguage({ language: 'Tableau' })} />
+                {/* <ProjectButton className='navbar-brand' skill='Tableau' handleClick={() => changeLanguage({ language: 'Tableau' })} /> */}
                 <ProjectButton className='navbar-brand' skill='jQuery' handleClick={() => changeLanguage({ language: 'jQuery' })} />
 
                 <ProjectButton className='navbar-brand' skill='ReactJS' handleClick={() => changeLanguage({ language: 'React' })} />
