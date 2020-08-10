@@ -11,8 +11,8 @@ const SQLProject = () => {
         <div className='sql-project'>
             <div className='container'>
             <div className='row' style = {{margin: '5px 0px'}}>
-                <div className='col-4'></div>
-                <div className = 'col-4'>
+                <div className='col-3'></div>
+                <div className = 'col-6'>
                 <div className ='projects' style={{width:'100%', border:'black solid 1px', height:'55px', borderRadius:'15px'}}>
                     <div className = {`${project=='dataAnaly'? 'techSelected':''} da`} onClick={()=>changeProject('dataAnaly')}>Data Analysis with Nested Queries </div> 
 
@@ -20,7 +20,7 @@ const SQLProject = () => {
 
 </div>
                 </div>
-                <div className = 'col-4'></div>
+                <div className = 'col-3'></div>
             </div>
                 <div className='row'>
                   
