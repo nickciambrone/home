@@ -6,8 +6,7 @@ import Description from '../description/description.component.jsx';
 import SQLProject from "../sql-project/sql-project.component";
 import PythonProject from "../python-project/python-project.component";
 import ExcelProject from "../excel-project/excel-project.component";
-
-
+import ContactForm from '../contact-form/contact-form.component'
 const Project = ({ language }) => {
     switch (language) {
         case 'description':
@@ -23,6 +22,10 @@ const Project = ({ language }) => {
             return (<div >Tableau</div>)
         case 'React':
             return (<div >ReactJS</div>)
+        case 'jQuery':
+            return (<div >jQuery</div>)
+        case 'contact':
+            return(<ContactForm />)
         default:
             return ('')
     }

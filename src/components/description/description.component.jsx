@@ -3,11 +3,13 @@ import './description.styles.scss'
 
 const Description = () => (
     <div>
+
      <div className='arrows' ></div>
 
         <br />
         <div className="jumbotron fatBottom">
             <h4 className="display-4">Hello, visitor!</h4>
+
 
             <div className='row'>
                 <div className='col-6'>
@@ -28,7 +30,8 @@ const Description = () => (
                     <div style={{ marginLeft: '15px' }}>I have experience as a data analyst for a consulting company and as a technology analyst for a tech startup. I am passionate about data analytics and application development, and the overlap between the two. 
                     <form method='get' action={require('./resume.pdf')} target='_blank'>
                         <button className="document resume" type="submit">View My Resume</button>
-                    </form>
+                    </form> 
+
                     </div>
 
                 </div>

@@ -92,3 +92,6 @@ padding-right:0;
 .reallyTall{
   height:1100px;
 }
+.homeButton:hover{
+ cursor:pointer;
+}

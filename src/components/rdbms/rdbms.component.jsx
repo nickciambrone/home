@@ -11,7 +11,7 @@ const Rdbms = () => {
   <div className="container">
   <h6 className="display-10">Relational Database Management project for Business Data Management</h6>
 
-    <p className = 'rdbmsDescription'>I developed a SQL database for a hotel that enabled the management staff access to important sales 
+    <p className = 'rdbmsDescription'>I developed an SQL database for a hotel that enabled the management staff access to important sales 
     and customer information. I then built an html form that enabled the user to search for records in the database by keywords.  </p>
     <img width ='600px;' src={diagram} alt="" className='ml'/>
 

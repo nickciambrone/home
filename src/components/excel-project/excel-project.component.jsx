@@ -9,11 +9,14 @@ const ExcelProject = () => {
             <div className='row'>
                 <div className="col-1"></div>
                 <div className="col-10">
-                    <div class="jumbotron jumbotron-fluid" >
-                            <h1 class="display-4">Fluid jumbotron</h1> 
-                            <object data={a} style = {{height:'600px',width:'400px'}}>
-                                <embed src={a} style = {{height:'600px',width:'400px'}}/>
+                    <div class="jumbotron jumbotron-fluid" style ={{padding:'25px'}}>
+                            <h4 class="display-5">Statistical Analysis with Excel</h4> 
+                            <p>In this project, I used excel's data analysis package to build a linear regression model that related profit to the supply of certain raw materials. I provided data visualization, an executive summary, and an explanation of the procedure that I followed to arrive at my model. </p>
+                            <div style={{marginLeft:'5px'}}>
+                            <object data={a} style = {{height:'600px',width:'600px'}}>
+                                <embed src={a} style = {{height:'600px',width:'600px'}}/>
                             </object>
+                            </div>
 
                     </div>
 

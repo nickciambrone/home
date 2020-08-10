@@ -7,9 +7,9 @@ const PythonProject = () => {
     const d = require('./4.png')
     const e = require('./5.png')
 
-    const [page, changePage] = useState(1)
+    const [page, changePage] = useState(0)
     const images = [a, b, c, d, e]
-    const numPages = images.length - 1;
+    const numPages = images.length ;
 
    
     return (
@@ -19,17 +19,18 @@ const PythonProject = () => {
                 <div className="col-10">
                     <div class="jumbotron jumbotron-fluid">
                         <div class="container">
-                            <h1 class="display-4">Fluid jumbotron</h1>
+                            <h4 class="display-6">Machine Learning Loan Classifier</h4>
+                            <p>In this project, I used Python's SKLearn package to build a model that predicts whether or not a loan applicant will default on a loan. I cleansed the data with Pandas and then used a Decision Tree Classifiern as the machine learning algorithm.</p>
                                 <div style = {{marginLeft:'5px', padding:'5px'}}>
-                                    <button className={`${1 == page ? 'ghost ' : ''}pageChanger`} onClick={() => { 1 == page ? console.log(page, numPages) : changePage(page - 1) }}>
+                                    <button className={`${0 == page ? 'ghost ' : ''}pageChanger`} onClick={() => { 0 == page ? console.log(page, numPages) : changePage(page - 1) }}>
                                         Previous Page
                 </button>
-                                    <span> Page {page} of {numPages} </span>
+                                    <span> Page {page+1} of {numPages} </span>
                                     <button
                                         className={`${
-                                            numPages == page ? 'ghost ' : ''
+                                            numPages-1 == page ? 'ghost ' : ''
                                             }pageChanger`}
-                                        onClick={() => { numPages == page ? console.log(page, numPages) : changePage(page + 1) }}>
+                                        onClick={() => { numPages-1 == page ? console.log(page, numPages) : changePage(page + 1) }}>
                                         Next Page
                 </button>
                                 </div>

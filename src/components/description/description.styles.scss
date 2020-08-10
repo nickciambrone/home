@@ -12,7 +12,7 @@
 .fatBottom{
     position:relative;
     bottom:235px;
-    z-index:-1;
+    z-index:0;
 
 }
 .resume{
@@ -22,21 +22,13 @@
     height:30px;
     background-image: linear-gradient(rgb(255, 242, 125), rgba(255, 193, 79, 0.925));
     border: thin black;
-}
-.rutgers{
-    display: flex;
-   
-}
-.rutgersAlum{
-    padding-left: 20px;
+    &:hover{
+        cursor:pointer;
+    }
 
-    animation-name: example;
-    animation-duration: 4s;
 }
-@keyframes example {
-    from {opacity: 0;}
-    to {opacity: 100%;}
-  }
-  
+
+
+
   /* The element to apply the animation to */
    
