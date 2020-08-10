@@ -6,7 +6,7 @@ const BillSplitter = () => {
         <div className='bill-splitter'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-4' style={{display:'flex', justifyContent:'center', marginTop:'8px'}}>           
+                    <div className='col-4' style={{display:'flex', justifyContent:'center',margin:'8px 0'}}>           
                      <a style={{color:'inherit'}}href='https://nickciambrone.github.io/splitmybill/' className = 'linkToCalc'target='_blank'>Use the app</a>
                     </div>
                     <div className='col-4'>

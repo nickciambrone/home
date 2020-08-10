@@ -21,7 +21,7 @@ const PythonProject = () => {
                         <div class="container">
                             <h4 class="display-6">Machine Learning Loan Classifier</h4>
                             <p>In this project, I used Python's SKLearn package to build a model that predicts whether or not a loan applicant will default on a loan. I cleansed the data with Pandas and then used a Decision Tree Classifiern as the machine learning algorithm.</p>
-                                <div style = {{marginLeft:'5px', padding:'5px'}}>
+                                <div style = {{ padding:'5px',display:'flex', justifyContent:'center'}}>
                                     <button className={`${0 == page ? 'ghost ' : ''}pageChanger`} onClick={() => { 0 == page ? console.log(page, numPages) : changePage(page - 1) }}>
                                         Previous Page
                 </button>
@@ -34,8 +34,11 @@ const PythonProject = () => {
                                         Next Page
                 </button>
                                 </div>
+                                
+                                <div style = {{ padding:'5px',display:'flex', justifyContent:'center'}}>
 
                                 <img src={images[page]} width='80%' />
+                                </div>
                         </div>
                     </div>
 

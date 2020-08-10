@@ -1,15 +1,14 @@
 
 .projects{
-    background-color: white; /* Black */
+    background-color: white;
     color:black;
 
-    padding:0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
 
 }
 .sp{
-    padding:15px 5px;
-    border-bottom: black solid thin;
-    border-right: black solid thin;
     height:80px;
 
     &:hover{
@@ -19,26 +18,21 @@
     }
 }
 
-.middle {
-    margin: auto;
 
-  }
-  .ep{
-    padding:20px 5px;
-    border-bottom: black solid thin;
-    border-right: black solid thin;
-    height:80px;
 
-    &:hover{
-        cursor: pointer;
-        background-color: #111;
-        color:white;
-    }
-
-  }
-
+.billCalc{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
 .techSelected{
     cursor: pointer;
     background-color: #111;
     color:white;
+}
+.trivia{
+    border-left: black solid thin; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
 }

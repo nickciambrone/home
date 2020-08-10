@@ -1,16 +1,36 @@
 
 .projects{
-    background-color: white; /* Black */
+    background-color: white;
     color:black;
 
-    padding:0;
+    display: flex;
+    justify-content: center;
+    width: 30%;
 
 }
-.sp{
-    padding:15px 5px;
+.rdbms{
+    padding:5px;
+
+    border-left: black solid thin; 
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     border-bottom: black solid thin;
     border-right: black solid thin;
-    height:80px;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #111;
+        color:white;
+    }
+}
+.da{   
+
+    padding:5px;
+    border-left: black solid thin; 
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border-bottom: black solid thin;
+    border-right: black solid thin;
 
     &:hover{
         cursor: pointer;
@@ -19,15 +39,10 @@
     }
 }
 
-.middle {
-    margin: auto;
 
-  }
   .ep{
-    padding:20px 5px;
     border-bottom: black solid thin;
     border-right: black solid thin;
-    height:80px;
 
     &:hover{
         cursor: pointer;

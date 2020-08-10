@@ -10,18 +10,24 @@ const SQLProject = () => {
     return (
         <div className='sql-project'>
             <div className='container'>
-           
+            <div className='row' style = {{margin: '5px 0px'}}>
+                <div className='col-4'></div>
+                <div className = 'col-4'>
+                <div className ='projects' style={{width:'100%', border:'black solid 1px', height:'55px', borderRadius:'15px'}}>
+                    <div className = {`${project=='dataAnaly'? 'techSelected':''} da`} onClick={()=>changeProject('dataAnaly')}>Data Analysis with Nested Queries </div> 
+
+<div className = {`${project=='rdbms'? 'techSelected':''} rdbms`} onClick={()=>changeProject('rdbms')}>Relational Database Management</div>   
+
+</div>
+                </div>
+                <div className = 'col-4'></div>
+            </div>
                 <div className='row'>
-                    <div className='col-2 projects'> 
-                   <div className = {`${project=='dataAnaly'? 'techSelected':''} da sp`} onClick={()=>changeProject('dataAnaly')}><span className = 'middle'>Data Analysis with Nested Queries</span>  </div> 
-
-                   <div className = {`${project=='rdbms'? 'techSelected':''} rdbms sp`} onClick={()=>changeProject('rdbms')}>Relational Database Management</div>   
+                  
 
 
-
-
-                   </div>
-                    <div className='col-10' >
+                    <div className='col-12 ' >
+                     
     {project =='rdbms'? <Rdbms /> :<Stocks />}
                         
                         

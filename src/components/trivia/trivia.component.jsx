@@ -6,7 +6,7 @@ const Trivia = () => {
         <div className='trivia'>
             <div className='container'>
                 <div className='row'>
-                    <div className='col-4' style={{display:'flex', justifyContent:'center', marginTop:'8px'}}>           
+                    <div className='col-4' style={{display:'flex', justifyContent:'center', margin:'8px 0'}}>           
                      <a style={{color:'inherit'}}href='https://nickciambrone.github.io/thronesTriv/' className = 'linkToCalc'target='_blank'>Take the quiz</a>
                     </div>
                     <div className='col-4'>
