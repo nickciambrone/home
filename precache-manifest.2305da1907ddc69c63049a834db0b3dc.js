@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7da36206cef3e1a1fbfb48df22c6c84d",
+    "revision": "ca91a97e72567fed680d3fb03ed53f07",
     "url": "/home/index.html"
   },
   {
-    "revision": "f800db96f9d03cc0eea3",
-    "url": "/home/static/css/main.7719c47f.chunk.css"
+    "revision": "69088a7db0a1e3504d2b",
+    "url": "/home/static/css/main.98d78f9b.chunk.css"
   },
   {
     "revision": "54420f3ac5e0eedbb304",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/home/static/js/2.23c19634.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "f800db96f9d03cc0eea3",
-    "url": "/home/static/js/main.075a3cf0.chunk.js"
+    "revision": "69088a7db0a1e3504d2b",
+    "url": "/home/static/js/main.4723b1f2.chunk.js"
   },
   {
     "revision": "ec108cbfd521a232d3c7",
@@ -56,6 +56,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/home/static/media/arrows.a5dd0620.png"
   },
   {
+    "revision": "4197bc057242331a3bf012d2ef970ee0",
+    "url": "/home/static/media/billCalc.4197bc05.png"
+  },
+  {
     "revision": "035045321509ae6169f1b0c0107c6c1e",
     "url": "/home/static/media/cp1.03504532.pdf"
   },
@@ -66,6 +70,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "842b9f25aad6cbd34d8c3116553d582b",
     "url": "/home/static/media/diagram.842b9f25.png"
+  },
+  {
+    "revision": "519bf23ccaa9557c236516cf48a42abc",
+    "url": "/home/static/media/hangman.519bf23c.png"
   },
   {
     "revision": "eafd2a9848c31f89537b8d00c43569fc",
@@ -90,5 +98,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "c77f520c22d90fbe0c8eb3599032e2e3",
     "url": "/home/static/media/stocks2.c77f520c.png"
+  },
+  {
+    "revision": "ee0406c96ec2037fcda28f2ee3098901",
+    "url": "/home/static/media/thrones.ee0406c9.png"
   }
 ]);
