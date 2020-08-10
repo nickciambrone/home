@@ -8,6 +8,7 @@ import PythonProject from "../python-project/python-project.component";
 import ExcelProject from "../excel-project/excel-project.component";
 import ContactForm from '../contact-form/contact-form.component'
 import Jquery from '../jquery/jquery.component'
+import ReactJS from '../react-js/react-js.component.jsx';
 const Project = ({ language }) => {
     switch (language) {
         case 'description':
@@ -22,7 +23,7 @@ const Project = ({ language }) => {
         case 'Tableau':
             return (<div >Tableau</div>)
         case 'React':
-            return (<h4 >Coming Soon...</h4>)
+            return (<ReactJS />)
         case 'jQuery':
             return (<Jquery />)
         case 'contact':

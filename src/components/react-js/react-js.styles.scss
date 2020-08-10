@@ -1,0 +1,15 @@
+.appLink{
+    background-color: black;
+    width:50%;
+    display: flex;
+    justify-content: center;
+   
+}
+a{    color: white;
+    padding:'15px';
+    &:hover{
+        color:yellow;
+        text-decoration: none;
+    }
+
+}
