@@ -13,10 +13,21 @@ const Rdbms = () => {
 
     <p className = 'rdbmsDescription'>I developed an SQL database for a hotel that enabled the management staff access to important sales 
     and customer information. I then built an html form that enabled the user to search for records in the database by keywords.  </p>
-    <img width ='600px;' src={diagram} alt="" className='ml'/>
+    <div className  ='row'>
+      <div className = 'col-12'>
+      <img width ='600px;' src={diagram} alt="" className='ml'/>
 
-<img width ='350px' src={image1} alt="sql Code" className='align-top'/>
-<img width ='350px' src={image2} alt="sql Code" className='align-top'/>
+      </div>
+    </div>
+    <div className = 'row'>
+
+      <div className= 'col-5'><img width ='350px' src={image1} alt="sql Code" className='align-top'/>
+</div>
+      <div className= 'col-7'><img width ='350px' src={image2} alt="sql Code" className='align-top'/>
+</div>
+
+    </div>
+
 
   </div>
 </div>
