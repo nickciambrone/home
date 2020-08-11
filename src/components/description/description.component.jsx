@@ -4,9 +4,9 @@ import './description.styles.scss'
 const Description = () => (
     <div>
 
-     <div className='arrows' ></div>
+     {/* <div className='arrows' ></div>
 
-        <br />
+        <br /> */}
         <div className="jumbotron fatBottom">
             <h4 className="display-4">Hello, visitor!</h4>
 
