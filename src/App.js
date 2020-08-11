@@ -11,7 +11,7 @@ const App = () => {
   const { language, project } = technologies;
   return (
     <div className="App">
-      <div className='container' style={{ paddingLeft: '0' ,width:'100vw'}}>
+      <div className='container-fluid' style={{ paddingLeft: '0' ,width:'100vw'}}>
         <div className='row'>
           <div className='col-2'>
             <div className='sidenav'>
