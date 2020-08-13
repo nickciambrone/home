@@ -1,0 +1,16 @@
+.ghost{
+    opacity:0.5;
+    &:hover{
+        cursor: not-allowed;
+    }
+}
+.pageChanger{
+    background-image: linear-gradient(rgb(99, 0, 0), black);
+    color:white;
+    padding:3px 7px;
+    
+
+    border:black 1px;
+    border-radius: 12px;
+    
+}

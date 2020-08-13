@@ -1,0 +1,36 @@
+
+
+.project-bar{
+    background-color: white;
+    color:black;
+
+    display: flex;
+    justify-content: center;
+
+}
+.sp{
+    width:33%; 
+    height:85px; 
+    padding:5px; 
+    border:black solid thin;
+
+    &:hover{
+        cursor: pointer;
+        background-color: #111;
+        color:white;
+    }
+}
+.leftMost{
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+.techSelected{
+    background-color: #111;
+    color:white;
+}
+.rightMost{
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+
+
+}

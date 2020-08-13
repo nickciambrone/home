@@ -23,10 +23,13 @@ const BillSplitter = () => {
                     </div>
                     <div className = 'col-4'></div>
                     <div className ='row'>
-                        <div className = 'col-12'>
+                        <div className ='col-1'></div>
+                        <div className = 'col-10'>
                         <img className='screenshot' src={require('./billCalc.png')} width='100%' />
 
                         </div>
+                        <div className ='col-1'></div>
+
                     </div>
                 </div>
             </div>

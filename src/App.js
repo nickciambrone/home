@@ -6,7 +6,9 @@ import loan from './loan.pdf';
 import cp1 from './cp1.pdf'
 import Stars from './components/stars/stars.component'
 import SavageIcons from './components/savage-icons/savage-icons.component'
-const App = () => {
+import {connect} from 'react-redux';
+import {changeProject} from './redux/project/project.actions'
+const App = ({changeProject}) => {
   const [technologies, changeLanguage] = useState({ language: 'description', project: null })
   const { language, project } = technologies;
   return (
@@ -53,13 +55,13 @@ const App = () => {
             <nav className="navbar navbar-expand-lg ">
               <div className="container">
 
-                <ProjectButton className='navbar-brand' skill='SQL' handleClick={() => changeLanguage({ language: 'SQL' })} />
+                <ProjectButton className='navbar-brand' skill='SQL' handleClick={() => {changeLanguage({ language: 'SQL' }); changeProject('dataAnaly')}} />
                 <ProjectButton className='navbar-brand' skill='Python' handleClick={() => changeLanguage({ language: 'Python', project: loan })} />
-                <ProjectButton className='navbar-brand' skill='Excel' handleClick={() => changeLanguage({ language: 'Excel', project: cp1 })} />
+                <ProjectButton className='navbar-brand' skill='Excel' handleClick={() => {changeLanguage({ language: 'Excel', project: cp1 }); changeProject('cp2')}} />
                 {/* <ProjectButton className='navbar-brand' skill='Tableau' handleClick={() => changeLanguage({ language: 'Tableau' })} /> */}
-                <ProjectButton className='navbar-brand' skill='jQuery' handleClick={() => changeLanguage({ language: 'jQuery' })} />
+                <ProjectButton className='navbar-brand' skill='jQuery' handleClick={() => {changeLanguage({ language: 'jQuery' }); changeProject('billSplitter')}} />
 
-                <ProjectButton className='navbar-brand' skill='ReactJS' handleClick={() => changeLanguage({ language: 'React' })} />
+                <ProjectButton className='navbar-brand' skill='ReactJS' handleClick={() => {changeLanguage({ language: 'React' }); changeProject('ecommerce')}} />
 
               </div>
             </nav>
@@ -77,5 +79,7 @@ const App = () => {
 
   );
 }
-
-export default App;
+const mapDispatchToProps = (dispatch)=>({
+  changeProject: (project)=>dispatch(changeProject(project))
+})
+export default connect(null, mapDispatchToProps)(App);

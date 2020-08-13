@@ -1,10 +1,11 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Rdbms from '../rdbms/rdbms.component';
 import Stocks from '../stocks/stocks.component'
+import ProjectBar from '../project-bar/project-bar.component'
+import {connect } from 'react-redux'
 import './sql-project.styles.scss'
 
-const SQLProject = () => {
-    const [project, changeProject] = useState('dataAnaly')
+const SQLProject = ({projectSelected}) => {
     
 
     return (
@@ -13,12 +14,8 @@ const SQLProject = () => {
             <div className='row' style = {{margin: '5px 0px'}}>
                 <div className='col-3'></div>
                 <div className = 'col-6'>
-                <div className ='projects' style={{width:'100%', border:'black solid 1px', height:'55px', borderRadius:'15px'}}>
-                    <div className = {`${project=='dataAnaly'? 'techSelected':''} da`} onClick={()=>changeProject('dataAnaly')}>Data Analysis with Nested Queries </div> 
-
-<div className = {`${project=='rdbms'? 'techSelected':''} rdbms`} onClick={()=>changeProject('rdbms')}>Relational Database Management</div>   
-
-</div>
+                    <ProjectBar projects = {[{id:'dataAnaly', name:'Data Analysis with Nested Queries'},{id:'rdbms', name:'Relational Database Management'}]}/>
+                    
                 </div>
                 <div className = 'col-3'></div>
             </div>
@@ -28,7 +25,7 @@ const SQLProject = () => {
 
                     <div className='col-12 ' >
                      
-    {project =='rdbms'? <Rdbms /> :<Stocks />}
+    {projectSelected =='rdbms'? <Rdbms /> :<Stocks />}
                         
                         
 
@@ -44,5 +41,8 @@ const SQLProject = () => {
     )
 
 }
+const mapStateToProps = (state)=>({
+    projectSelected: state.project.projectSelected
+})
 
-export default SQLProject;
+export default connect(mapStateToProps)(SQLProject);

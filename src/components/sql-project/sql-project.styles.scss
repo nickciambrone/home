@@ -1,59 +1,59 @@
 
-.projects{
-    background-color: white;
-    color:black;
+// .projects{
+//     background-color: white;
+//     color:black;
 
-    display: flex;
-    justify-content: center;
-    width: 30%;
+//     display: flex;
+//     justify-content: center;
+//     width: 30%;
 
-}
-.rdbms{
-    padding:5px;
+// }
+// .rdbms{
+//     padding:5px;
 
-    border-left: black solid thin; 
-    border-top-right-radius: 15px;
-    border-bottom-right-radius: 15px;
-    border-bottom: black solid thin;
-    border-right: black solid thin;
+//     border-left: black solid thin; 
+//     border-top-right-radius: 15px;
+//     border-bottom-right-radius: 15px;
+//     border-bottom: black solid thin;
+//     border-right: black solid thin;
 
-    &:hover{
-        cursor: pointer;
-        background-color: #111;
-        color:white;
-    }
-}
-.da{   
+//     &:hover{
+//         cursor: pointer;
+//         background-color: #111;
+//         color:white;
+//     }
+// }
+// .da{   
 
-    padding:5px;
-    border-left: black solid thin; 
-    border-top-left-radius: 15px;
-    border-bottom-left-radius: 15px;
-    border-bottom: black solid thin;
-    border-right: black solid thin;
+//     padding:5px;
+//     border-left: black solid thin; 
+//     border-top-left-radius: 15px;
+//     border-bottom-left-radius: 15px;
+//     border-bottom: black solid thin;
+//     border-right: black solid thin;
 
-    &:hover{
-        cursor: pointer;
-        background-color: #111;
-        color:white;
-    }
-}
+//     &:hover{
+//         cursor: pointer;
+//         background-color: #111;
+//         color:white;
+//     }
+// }
 
 
-  .ep{
-    border-bottom: black solid thin;
-    border-right: black solid thin;
+//   .ep{
+//     border-bottom: black solid thin;
+//     border-right: black solid thin;
 
-    &:hover{
-        cursor: pointer;
-        background-color: #111;
-        color:white;
-    }
+//     &:hover{
+//         cursor: pointer;
+//         background-color: #111;
+//         color:white;
+//     }
 
-  }
+//   }
 
-.techSelected{
-    cursor: pointer;
-    background-color: #111;
-    color:white;
-}
+// .techSelected{
+//     cursor: pointer;
+//     background-color: #111;
+//     color:white;
+// }

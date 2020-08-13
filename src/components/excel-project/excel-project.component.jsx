@@ -1,23 +1,26 @@
 import React from 'react';
+import {connect} from 'react-redux';
+import ProjectBar from '../project-bar/project-bar.component';
+import Cp2 from '../cp2/cp2.component';
 import './excel-project.styles.scss'
-const ExcelProject = () => {
-    const a = require('./cp2.pdf')
+const ExcelProject = ({projectSelected}) => {
   
   
     return (
         <div className='excel-project'>
+            <div className = 'row'>
+                <div className = 'col-4'></div>
+                <div className = 'col-4'></div>
+                {/* <div className = 'col-4'><ProjectBar projects = {[{id:'cp2', name:'Business Analysis'}]} /></div> */}
+                <div className = 'col-4'></div>
+
+            </div>
             <div className='row'>
                 <div className="col-1"></div>
                 <div className="col-10">
                     <div class="jumbotron jumbotron-fluid" style ={{padding:'25px'}}>
-                            <h4 class="display-5">Statistical Analysis with Excel</h4> 
-                            <p>In this project, I used excel's data analysis package to build a linear regression model that related profit to the supply of certain raw materials. I provided data visualization, an executive summary, and an explanation of the procedure that I followed to arrive at my model. </p>
-                            <div style={{marginLeft:'5px'}}>
-                            <object data={a} style = {{height:'600px',width:'600px'}}>
-                                <embed src={a} style = {{height:'600px',width:'600px'}}/>
-                            </object>
-                            </div>
-
+                       
+                        {projectSelected=='cp2' ? <Cp2/>:''}
                     </div>
 
 
@@ -31,4 +34,7 @@ const ExcelProject = () => {
 
 
 }
-export default ExcelProject;
+const mapStateToProps =(state)=>({
+    projectSelected:state.project.projectSelected
+})
+export default connect(mapStateToProps)(ExcelProject);
